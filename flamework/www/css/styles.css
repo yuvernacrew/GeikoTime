@@ -13,3 +13,12 @@
 .statusbar-overlay {
     background: #000000;
 }
+
+.l-toolbar {
+  position: fixed;
+  bottom: 0;
+}
+
+.size18 {
+  font-size: 1.8em;
+}
