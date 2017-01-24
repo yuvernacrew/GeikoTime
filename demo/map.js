@@ -10,6 +10,8 @@ var geikoLng = 136.947885;
 //ユーザーの現在の位置情報を取得
 navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
+
+
 //ユーザーの現在の位置情報を取得
 function successCallback(position) {
 	console.log('成功');
@@ -20,6 +22,14 @@ function successCallback(position) {
 
   var dis = getDistance(lat, lng, geikoLat, geikoLng);
   console.log(dis+'km');
+
+  if(dis < 0.05){
+    console.log('出席おめ');
+  }else if(dis < 1){
+    console.log('あと少しがんば');
+  }else{
+    console.log('てめぇまだ家やろ');
+  }
 
 }
 

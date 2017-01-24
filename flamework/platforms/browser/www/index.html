@@ -19,51 +19,53 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-
     <!-- Your app title -->
     <title>TOP PAGE</title>
-
     <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
      -->
-
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!--ここから -->
-<div class="l-toolbar toolbar tabbar tabbar-labels">
-  <div class="toolbar-inner">
-    <a href="#tab1" class="tab-link">
-      <i class="fa fa-user size18" aria-hidden="true"></i>
-      <span class="tabbar-label">my page</span>
-    </a>
-    <a href="#tab2" class="tab-link">
-      <i class="fa fa-clock-o size18" aria-hidden="true"></i>
-      <span class="tabbar-label">time</span>
-    </a>
-    <a href="#tab4" class="tab-link">
-      <i class="fa fa-table size18" aria-hidden="true"></i>
-      <span class="tabbar-label">time table</span>
-    </a>
-    <a href="#tab4" class="tab-link">
-      <i class="icon demo-icon-4 size18"></i>
-      <span class="tabbar-label">ranking</span>
-    </a>
-    <a href="#tab4" class="tab-link">
-      <i class="fa fa-cog size18" aria-hidden="true"></i>
-      <span class="tabbar-label">setting</span>
-    </a>
+  <div class="splat-container">
+    <img class="splat-img" src="images/splat.png" alt="">
+    <div class="login-container">
+      <div class="list-block inset">
+        <ul class="mb16">
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-input">
+                  <input type="number" placeholder="学籍番号">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-input">
+                  <input type="password" placeholder="パスワード">
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul> 
+        <a href="#" class="button button-big button-fill mb16">ログイン </a>
+        <a href="./html/entry.html" class="button button-big btn-sizing button-fill color-gray">新規登録</a>
+      </div>  
+    </div>
   </div>
-</div>
-    <!--ここまで -->
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
+    <!--ここまで -->
 </body>
 
 </html>
