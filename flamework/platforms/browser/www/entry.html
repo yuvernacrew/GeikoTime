@@ -32,107 +32,126 @@
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
     <!--ここから -->
     <div class="navbar">
         <div class="navbar-inner">
             <div class="left">
-                <a href="#" class="link icon-only">
+                <a href="index.html" class="link icon-only">
                     <i class="icon icon-back"></i>
                 </a>
             </div>
             <div class="center">登録</div>
             <div class="right">
-            <a href="#" class="link">完了</a>
+            <a href="#" class="link">次へ</a>
             </div>
         </div>
     </div>  
 
-    <div class="content-block-title">Icons and inputs</div>
+<div class="content-block-title">ユーザー情報</div>
+<!-- "inset" class on list-block -->
 <div class="list-block">
-  <ul>
+<ul>
     <!-- Text inputs -->
     <li>
       <div class="item-content">
-        <div class="item-media"><i class="icon f7-icons">person</i></div>
         <div class="item-inner">
-          <div class="item-input">
-            <input type="text" placeholder="Your name">
-          </div>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-content">
-        <div class="item-media"><i class="icon f7-icons">email</i></div>
-        <div class="item-inner">
-          <div class="item-input">
-            <input type="email" placeholder="E-mail">
-          </div>
-        </div>
-      </div>
-    </li>
- 
-    <!-- Select -->
-    <li>
-      <div class="item-content">
-        <div class="item-media"><i class="icon f7-icons">persons</i></div>
-        <div class="item-inner">
+          <div class="item-title label">学科</div>
           <div class="item-input">
             <select>
-              <option>Male</option>
-              <option>Female</option>
+              <option>情報環境デザイン学科</option>
+              <option>産業イノベーションデザイン学科</option>
+              <option>建築都市デザイン学科</option>
             </select>
           </div>
         </div>
       </div>
     </li>
- 
-    <!-- Date -->
+
     <li>
       <div class="item-content">
-        <div class="item-media"><i class="icon f7-icons">calendar</i></div>
         <div class="item-inner">
+          <div class="item-title label">学年</div>
           <div class="item-input">
-            <input type="date" placeholder="Birth day" value="2014-04-30">
+            <select>
+              <option>1年</option>
+              <option>2年</option>
+              <option>3年</option>
+              <option>4年</option>
+            </select>
           </div>
         </div>
       </div>
     </li>
- 
-    <!-- Switch (Checkbox) -->
+
+
     <li>
       <div class="item-content">
-        <div class="item-media"><i class="icon f7-icons">check</i></div>
         <div class="item-inner">
+          <div class="item-title label">学籍番号</div>
           <div class="item-input">
-            <label class="label-switch">
-              <input type="checkbox">
-              <div class="checkbox"></div>
-            </label>
+            <input type="number" placeholder="number">
           </div>
         </div>
       </div>
     </li>
- 
-    <!-- Slider (Range input) -->
+
     <li>
       <div class="item-content">
-        <div class="item-media"><i class="icon f7-icons">filter</i></div>
         <div class="item-inner">
+          <div class="item-title label">芸工ネーム</div>
           <div class="item-input">
-            <div class="range-slider">
-              <input type="range" min="0" max="100" value="50" step="0.1">
-            </div>
+            <input type="text" placeholder="name">
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">パスワード</div>
+          <div class="item-input">
+            <input type="password" placeholder="password">
           </div>
         </div>
       </div>
     </li>
   </ul>
-</div> 
 
+<div class="content-block-title">時間情報(のちの登録でもOK!)</div>
+    <!-- "inset" class on list-block -->
+<div class="list-block bottom-middle">
+  <ul>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">登校時間</div>
+          <div class="item-input">
+            <input class='resize-input' type="number"><span class='input-color'>分</span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">朝の準備時間</div>
+          <div class="item-input">
+            <input class='resize-input' type="number"><span class='input-color'>分</span>
+          </div>
+        </div>
+      </div>
+
+    </li>
+  </ul>
+</div>  
     <!--ここまで -->
+
+<a href="entry.html" class="button button-big btn-sizing button-fill color-yellow btn-middle">次へ</a>
+
 </body>
 
 </html>

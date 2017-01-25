@@ -32,42 +32,74 @@
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-    <!--ここから -->
-  <div class="splat-container">
-    <img class="splat-img" src="images/splat.png" alt="">
-    <div class="login-container">
-      <div class="list-block inset">
-        <ul class="bottom-xsmall">
-          <li>
-            <div class="item-content">
-              <div class="item-inner">
-                <div class="item-input">
-                  <input type="number" placeholder="学籍番号">
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="item-content">
-              <div class="item-inner">
-                <div class="item-input">
-                  <input type="password" placeholder="パスワード">
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul> 
-        
-        <a href="#" class="button button-big button-fill color-red bottom-xsmall">ログイン </a>
-        <a href="./entry.html" class="button button-fill color-orange">新規登録</a>
-      </div>  
+
+<!--ここから -->
+<div class="navbar bottom-xxlarge">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="index.html" class="link icon-only">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center">登録</div>
+        <div class="right">
+        <a href="#" class="link">完了</a>
+        </div>
     </div>
-  </div>
+</div>  
 
-    <!--ここまで -->
+<p class="time-title bottom-middle">授業があるところをタップしてください。</p>
+<table class='time-table bottom-large' border="0" cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th></th>
+      <th>月</th>
+      <th>火</th>
+      <th>水</th>
+      <th>木</th>
+      <th>金</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>一限</th>
+      <td class='mon-1'></td>
+      <td class='tue-1'></td>
+      <td class='wed-1'></td>
+      <td class='thu-1'></td>
+      <td class='fri-1'></td>
+    </tr>
+    <tr>
+      <th>二限</th>
+      <td class='mon-2'></td>
+      <td class='tue-2'></td>
+      <td class='wed-2'></td>
+      <td class='thu-2'></td>
+      <td class='fri-2'></td>
+    </tr>
+    <tr>
+      <th>三限</th>
+      <td class='mon-3'></td>
+      <td class='tue-3'></td>
+      <td class='wed-3'></td>
+      <td class='thu-3'></td>
+      <td class='fri-3'></td>
+    </tr>
+    <tr>
+      <th>四限</th>
+      <td class='mon-4'></td>
+      <td class='tue-4'></td>
+      <td class='wed-4'></td>
+      <td class='thu-4'></td>
+      <td class='fri-4'></td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="entry2.html" class="button button-big btn-sizing button-fill color-yellow btn-middle">完了</a>
+
 </body>
-
 </html>

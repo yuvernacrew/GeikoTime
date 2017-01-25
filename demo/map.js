@@ -10,11 +10,8 @@ var geikoLat = 35.181382;
 var geikoLng = 136.947885;
 //message
 var attention;
-
-//ユーザーの現在の位置情報を取得
-$('#getPosition').click(function(){
-  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-});
+var h, m, s;
+var point = 0, sum = 0;
 
 setInterval(function(){
   var ob = Countdown()
@@ -22,7 +19,18 @@ setInterval(function(){
   m = ob.m;
   s = ob.s;
   $('#timer-box').text('出席時刻まで'+h+'時間'+m+'分'+s+'秒');
+  $('.sum-point').text('いままでに' + sum + 'ptげっと！');
 },1000)
+
+//ユーザーの現在の位置情報を取得
+$('#getPosition').click(function(){
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+});
+
+function getPoint(){
+  point = h * 3600 + m * 60 + s ;
+  sum = sum + point;
+}
 
 function successCallback(position) {
 	console.log('成功');
@@ -41,6 +49,10 @@ function successCallback(position) {
   }else{
     console.log('てめぇまだ家やろ');
   }
+
+  getPoint();
+  $('.get-point').text(point+'ptげっと！');
+
 
 }
 
@@ -82,7 +94,11 @@ function Countdown(){
   var myMinute = myTime.getMinutes();
   var mySecond = myTime.getSeconds();
 
-  var countHour = 17;
+  if(myHour == 0){
+    point = 0;
+  }
+
+  var countHour = 18;
   var countMinite = 0;
   var countSecond = 0;
 
@@ -109,6 +125,7 @@ function Countdown(){
     m : minute,
     s : second
   }
+
 }
 
 

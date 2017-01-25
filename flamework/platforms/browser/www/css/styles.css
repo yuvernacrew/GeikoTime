@@ -9,6 +9,9 @@
 
    See https://github.com/apache/cordova-plugin-statusbar
 */
+body {
+  background-color: #efeff4;
+}
 
 .statusbar-overlay {
     background: #000000;
@@ -23,39 +26,23 @@
   font-size: 1.8em;
 }
 
-.mb16 {
-  margin-bottom: 10px !important;
+.bottom-xxsmall {
+  margin-bottom: 8px !important;
 }
 
-body {
-  background-color: #efeff4;
-}
-/* splat */
-
-.splat-container {
-  position: absolute;
-  z-index: 100;
-  background-color: #ffc927;
-  width: 100%;
-  height: 100%;
+.bottom-xsmall {
+  margin-bottom: 12px !important;
 }
 
-.splat-img {
-  position: absolute;
-  width: 50vw;
-  left: 25vw;
-  top: 20vh;
+.bottom-small {
+  margin-bottom: 18px !important;
 }
 
-.login-container {
-  display: none;
-  width: 90%;
-  margin:0 auto;
-  margin-top: 57vh;
+.bottom-middle {
+  margin-bottom: 24px !important;
 }
 
-.btn-sizing {
-  width: 100%;
-  height: 30px !important;
-  line-height: 30px !important;
+.btn-middle {
+  width: 80%;
+  margin: 0 auto;
 }

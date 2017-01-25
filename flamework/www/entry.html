@@ -28,10 +28,12 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
     <!--ここから -->
@@ -49,11 +51,9 @@
         </div>
     </div>  
 
-    <div class="content-block-title">ユーザー情報</div>
-    <!-- "inset" class on list-block -->
-    <div class="list-block">
-
-
+<div class="content-block-title">ユーザー情報</div>
+<!-- "inset" class on list-block -->
+<div class="list-block">
 <ul>
     <!-- Text inputs -->
     <li>
@@ -65,6 +65,22 @@
               <option>情報環境デザイン学科</option>
               <option>産業イノベーションデザイン学科</option>
               <option>建築都市デザイン学科</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">学年</div>
+          <div class="item-input">
+            <select>
+              <option>1年</option>
+              <option>2年</option>
+              <option>3年</option>
+              <option>4年</option>
             </select>
           </div>
         </div>
@@ -86,20 +102,9 @@
     <li>
       <div class="item-content">
         <div class="item-inner">
-          <div class="item-title label">名前</div>
-          <div class="item-input">
-            <input type="text" placeholder="name">
-          </div>
-        </div>
-      </div>
-    </li>
-
-    <li>
-      <div class="item-content">
-        <div class="item-inner">
           <div class="item-title label">芸工ネーム</div>
           <div class="item-input">
-            <input type="text" placeholder="GeikoName">
+            <input type="text" placeholder="name">
           </div>
         </div>
       </div>
@@ -116,8 +121,38 @@
       </div>
     </li>
   </ul>
-    </div>  
+
+<div class="content-block-title">時間情報(のちの登録でもOK!)</div>
+    <!-- "inset" class on list-block -->
+<div class="list-block bottom-middle">
+  <ul>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">登校時間</div>
+          <div class="item-input">
+            <input class='resize-input' type="number"><span class='input-color'>分</span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">朝の準備時間</div>
+          <div class="item-input">
+            <input class='resize-input' type="number"><span class='input-color'>分</span>
+          </div>
+        </div>
+      </div>
+
+    </li>
+  </ul>
+</div>  
     <!--ここまで -->
+
+<a href="entry.html" class="button button-big btn-sizing button-fill color-yellow btn-middle">次へ</a>
+
 </body>
 
 </html>
