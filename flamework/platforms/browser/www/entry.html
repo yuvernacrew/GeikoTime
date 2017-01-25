@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Your app title -->
+    <title>TOP PAGE</title>
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--ここから -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center">登録</div>
+            <div class="right">
+            <a href="#" class="link">完了</a>
+            </div>
+        </div>
+    </div>  
+
+    <div class="content-block-title">Icons and inputs</div>
+<div class="list-block">
+  <ul>
+    <!-- Text inputs -->
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">person</i></div>
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="text" placeholder="Your name">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">email</i></div>
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="email" placeholder="E-mail">
+          </div>
+        </div>
+      </div>
+    </li>
+ 
+    <!-- Select -->
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">persons</i></div>
+        <div class="item-inner">
+          <div class="item-input">
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </li>
+ 
+    <!-- Date -->
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">calendar</i></div>
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="date" placeholder="Birth day" value="2014-04-30">
+          </div>
+        </div>
+      </div>
+    </li>
+ 
+    <!-- Switch (Checkbox) -->
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">check</i></div>
+        <div class="item-inner">
+          <div class="item-input">
+            <label class="label-switch">
+              <input type="checkbox">
+              <div class="checkbox"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </li>
+ 
+    <!-- Slider (Range input) -->
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">filter</i></div>
+        <div class="item-inner">
+          <div class="item-input">
+            <div class="range-slider">
+              <input type="range" min="0" max="100" value="50" step="0.1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> 
+
+    <!--ここまで -->
+</body>
+
+</html>

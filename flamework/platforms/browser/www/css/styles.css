@@ -27,6 +27,9 @@
   margin-bottom: 10px !important;
 }
 
+body {
+  background-color: #efeff4;
+}
 /* splat */
 
 .splat-container {

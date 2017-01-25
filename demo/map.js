@@ -1,3 +1,5 @@
+$(function(){
+
 //芸工の緯度
 var latitude;
 //芸工の経度
@@ -6,13 +8,22 @@ var longitude;
 var geikoLat = 35.181382;
 //芸工の経度
 var geikoLng = 136.947885;
+//message
+var attention;
 
 //ユーザーの現在の位置情報を取得
-navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+$('#getPosition').click(function(){
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+});
 
+setInterval(function(){
+  var ob = Countdown()
+  h = ob.h;
+  m = ob.m;
+  s = ob.s;
+  $('#timer-box').text('出席時刻まで'+h+'時間'+m+'分'+s+'秒');
+},1000)
 
-
-//ユーザーの現在の位置情報を取得
 function successCallback(position) {
 	console.log('成功');
 	//緯度
@@ -62,3 +73,44 @@ function getDistance(lat1, lng1, lat2, lng2) {
     Math.sin(radians(lat1))*
     Math.sin(radians(lat2)));
 }
+
+function Countdown(){
+  var hour, minute, second;
+  var myTime= new Date();
+
+  var myHour = myTime.getHours();
+  var myMinute = myTime.getMinutes();
+  var mySecond = myTime.getSeconds();
+
+  var countHour = 17;
+  var countMinite = 0;
+  var countSecond = 0;
+
+  if(countSecond < mySecond){
+    countSecond = countSecond + 60;
+    countMinite = countMinite - 1;
+  }
+
+  if(countMinite < myMinute){
+    countMinite = countMinite + 60;
+    countHour = countHour - 1;
+  }
+
+  if(countHour < myHour){
+    countHour = countHour + 24;
+  }
+
+  hour = countHour - myHour;
+  minute = countMinite - myMinute;
+  second = countSecond - mySecond;
+
+  return{
+    h : hour,
+    m : minute,
+    s : second
+  }
+}
+
+
+
+})
