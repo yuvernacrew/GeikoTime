@@ -1,0 +1,56 @@
+.resize-input {
+	display: inline-block !important;
+	width: 80px !important;
+}
+
+.input-color {
+	color: #aaa;
+}
+
+.time-title {
+	width: 80vw;
+	margin:0 auto;
+	text-align: center;
+}
+
+.time-table {
+	width: 80vw;
+	margin:0 auto;
+	border: 1px solid #aaa;
+}
+
+.time-table thead,
+.time-table tbody,
+.time-table tr,
+.time-table th,
+.time-table td {
+	border: 1px solid #aaa;
+	font-weight: 200;
+	color: white;
+	background-color: white;
+}
+
+.time-table th{
+	background-color: #fc0;
+}
+
+.time-table tbody tr{
+	height: 60px;
+}
+
+.time-table tbody th{
+	width: 15%;
+}
+
+.time-table td{
+	font-size: 1.8em;
+	text-align: center;
+	color: #aaa;
+	line-height: 60px;
+}
+
+.time-table .active{
+	background-color: #fffacd;
+}
+
+

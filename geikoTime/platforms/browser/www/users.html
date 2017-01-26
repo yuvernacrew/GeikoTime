@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Your app title -->
+    <title>TOP PAGE</title>
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    
+</head>
+<body>
+<!--ここから -->
+<div class="views">
+  <div class="view view-main">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left"></div>
+        <div class="center">my page</div>
+        <div class="right"></div>
+        <!-- Sub navbar -->
+        <div class="subnavbar">
+          <div class="buttons-row">
+            <a href="#tab1" class="button color-yellow tab-link active">My point</a>
+            <a href="#tab2" class="button color-yellow tab-link">Geiko</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pages navbar-through">
+      <!-- Pag has additional "with-subnavbar" class -->
+      <div data-page="home" class="page with-subnavbar">
+        <div class="page-content hide-bars-on-scroll">
+          <div class="tabs">
+            <div id="tab1" class="tab active">
+              <div class="content-block">
+                <div class="content-block-title">あなたの合計得点</div>
+                <div class="card">
+                  <div class="card-content">
+
+                    <div class="card-content-inner"><span class='text-strong text-large'>2890</span>pt　　(48分10秒の得)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-block">
+                    <!-- First group-->
+                    <div class="list-group scroll2 ">
+                      <ul>
+                        <li class="list-group-title">一週間</li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-circle-o-notch" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">90pt</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-circle-o-notch" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">230pt</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-times" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">ー400pt</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li class="list-group-title">一ヶ月</li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-circle-o-notch" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">330pt</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-circle-o-notch" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">700pt</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-times" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">ー10pt</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-times" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">ー400pt</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-times" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">ー100pt</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-times" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">320pt</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media"><i class="fa fa-times" aria-hidden="true"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">210pt</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            <div id="tab2" class="tab">
+              <div class="content-block">
+                <div class="content-block-title">芸工の合計得点</div>
+                <div class="card">
+                  <div class="card-content">
+
+                    <div class="card-content-inner"><span class='text-strong text-large'>24590</span>pt　　(6時間52分30秒の得)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-block">
+                    <!-- First group-->
+                    <div class="list-group scroll2">
+                      <ul>
+                        <li class="list-group-title">Ranking</li>
+
+                        <li class="item-content">
+                          <div class="item-media">第一位</div>
+                          <div class="item-inner">
+                            <div class="item-title">4394pt</div>
+                            <div class="item-after">155301</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第二位</div>
+                          <div class="item-inner">
+                            <div class="item-title">3494pt</div>
+                            <div class="item-after">155662</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第三位</div>
+                          <div class="item-inner">
+                            <div class="item-title">2763pt</div>
+                            <div class="item-after">162492</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第四位</div>
+                          <div class="item-inner">
+                            <div class="item-title">839pt</div>
+                            <div class="item-after">155912</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第五位</div>
+                          <div class="item-inner">
+                            <div class="item-title">817pt</div>
+                            <div class="item-after">163221</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第六位</div>
+                          <div class="item-inner">
+                            <div class="item-title">716pt</div>
+                            <div class="item-after">158231</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第七位</div>
+                          <div class="item-inner">
+                            <div class="item-title">354pt</div>
+                            <div class="item-after">153012</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第八位</div>
+                          <div class="item-inner">
+                            <div class="item-title">4394pt</div>
+                            <div class="item-after">155012</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第九位</div>
+                          <div class="item-inner">
+                            <div class="item-title">4394pt</div>
+                            <div class="item-after">155012</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-media">第十位</div>
+                          <div class="item-inner">
+                            <div class="item-title">4394pt</div>
+                            <div class="item-after">155012</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        
+
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<header>
+  <div class="l-toolbar toolbar tabbar tabbar-labels">
+    <div class="toolbar-inner">
+      <a href="users.html" class="tab-link tab-active">
+        <i class="fa fa-user size18" aria-hidden="true"></i>
+        <span class="tabbar-label">my page</span>
+      </a>
+      <a href="#tab2" class="tab-link">
+        <i class="fa fa-clock-o size18" aria-hidden="true"></i>
+        <span class="tabbar-label">time</span>
+      </a>
+      <a href="#tab4" class="tab-link">
+        <i class="fa fa-table size18" aria-hidden="true"></i>
+        <span class="tabbar-label">time table</span>
+      </a>
+
+      </a>
+      <a href="#tab4" class="tab-link">
+        <i class="fa fa-cog size18" aria-hidden="true"></i>
+        <span class="tabbar-label">setting</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+<!-- ここまで -->
+
+</body>
+
+</html>

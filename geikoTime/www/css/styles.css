@@ -9,9 +9,28 @@
 
    See https://github.com/apache/cordova-plugin-statusbar
 */
+
+@font-face {
+  font-family: 'UIspfont';
+  src: url('../fonts/03スマートフォントUI.otf');
+}
+
 body {
   background-color: #efeff4;
+  font-family: 'UIspfont';
+  overflow: hidden;
 }
+
+.scroll {
+  height: 370px;
+  overflow: scroll;
+}
+
+.scroll2 {
+  height: 380px;
+  overflow: scroll;
+}
+
 
 .statusbar-overlay {
     background: #000000;
@@ -42,7 +61,45 @@ body {
   margin-bottom: 24px !important;
 }
 
+.bottom-large {
+  margin-bottom: 38px !important;
+}
+
+.bottom-xlarge {
+  margin-bottom: 52px !important;
+}
+
+.bottom-xxlarge {
+  margin-bottom: 80px !important;
+}
+
+.top-small {
+  margin-top: 10px !important;
+}
+
 .btn-middle {
   width: 80%;
   margin: 0 auto;
 }
+
+.tabbar a.tab-active {
+  color: #fc0 !important;
+}
+
+.navbar {
+  background-color: #fc0 !important;
+  color: white;
+}
+
+.text-large {
+  font-size: 1.4em;
+}
+.subnavber .active{
+  background-color: #fc0 !important;
+  color: white !important;
+}
+
+.color-yellow{
+  border: 1px solid #fc0 !important;
+}
+

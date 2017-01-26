@@ -28,6 +28,7 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
@@ -36,6 +37,8 @@
 </head>
 <body>
     <!--ここから -->
+  <!-- Page, "data-page" contains page name -->
+<div data-page="index" class="page">
   <div class="splat-container">
     <img class="splat-img" src="images/splat.png" alt="">
     <div class="login-container">
@@ -62,11 +65,12 @@
         </ul> 
         
         <a href="#" class="button button-big button-fill color-red bottom-xsmall">ログイン </a>
-        <a href="./entry.html" class="button button-fill color-orange">新規登録</a>
+
+        <a href="entry.html" target="_system" class="button button-fill color-orange">新規登録</a>
       </div>  
     </div>
   </div>
-
+</div>
     <!--ここまで -->
 </body>
 

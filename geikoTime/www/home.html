@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Your app title -->
+    <title>TOP PAGE</title>
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    
+</head>
+<body>
+<!--ここから -->
+<div class="navbar bottom-xlarge">
+    <div class="navbar-inner">
+        <div class="left">
+        </div>
+        <div class="center">出席ポイント</div>
+        <div class="right">
+        </div>
+    </div>
+</div>  
+<div class='inline bottom-small'>
+  <img class='logo-img' src='images/logo-yellow.png'>
+  <div class='arrow_box top-small'>
+    出席時間まで<br>
+    <div id='timer-box' class='text-large'></div>
+  </div>
+</div>
+
+<div class="timer-container">
+  <div id='timer-box'></div>
+</div>
+
+<div id='getPosition' class="solid bottom-xxlarge text-large">学校に到着！</div>
+ 
+
+<div class="content-block-title">通知センター</div>
+<div class='scroll'>
+  <div class="card">
+    <div class="card-content">
+      <div class="card-content-inner get-point">90ptげっと！</div>
+      <span class='card-time'>2分前</span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <div class="card-content-inner">ポイントゲットまであと少し！</div>
+      <span class='card-time'>4分前</span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <div class="card-content-inner">そろそろ電車にのらないと間に合いません</div>
+      <span class='card-time'>8分前</span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <div class="card-content-inner">あと少しで出発の時間です。
+      <span class='card-time'>40分前</span>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <div class="card-content-inner">そろそろ起きる時間です。
+      <span class='card-time'>80分前</span>
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-content">
+      <div class="card-content-inner">そろそろ起きる時間です。
+      <span class='card-time'>20分前</span></div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-content">
+      <div class="card-content-inner">そろそろ起きる時間です。
+      <span class='card-time'>20分前</span></div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-content">
+      <div class="card-content-inner">そろそろ起きる時間です。</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<header>
+  <div class="l-toolbar toolbar tabbar tabbar-labels">
+    <div class="toolbar-inner">
+      <a href="users.html" class="tab-link">
+        <i class="fa fa-user size18" aria-hidden="true"></i>
+        <span class="tabbar-label">my page</span>
+      </a>
+      <a href="#tab2" class="tab-link  tab-active">
+        <i class="fa fa-clock-o size18" aria-hidden="true"></i>
+        <span class="tabbar-label">time</span>
+      </a>
+      <a href="#tab4" class="tab-link">
+        <i class="fa fa-table size18" aria-hidden="true"></i>
+        <span class="tabbar-label">time table</span>
+      </a>
+
+      </a>
+      <a href="#tab4" class="tab-link">
+        <i class="fa fa-cog size18" aria-hidden="true"></i>
+        <span class="tabbar-label">setting</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+<!-- ここまで -->
+
+</body>
+
+</html>

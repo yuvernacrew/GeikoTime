@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Your app title -->
+    <title>TOP PAGE</title>
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<!--ここから -->
+<div class="navbar bottom-xxlarge">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="index.html" class="link icon-only">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center">登録</div>
+        <div class="right">
+        <a href="#" class="link">完了</a>
+        </div>
+    </div>
+</div>  
+
+<p class="time-title bottom-middle">授業があるところをタップしてください。</p>
+<table class='time-table bottom-large' border="0" cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th></th>
+      <th>月</th>
+      <th>火</th>
+      <th>水</th>
+      <th>木</th>
+      <th>金</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>一限</th>
+      <td class='mon-1'></td>
+      <td class='tue-1'></td>
+      <td class='wed-1'></td>
+      <td class='thu-1'></td>
+      <td class='fri-1'></td>
+    </tr>
+    <tr>
+      <th>二限</th>
+      <td class='mon-2'></td>
+      <td class='tue-2'></td>
+      <td class='wed-2'></td>
+      <td class='thu-2'></td>
+      <td class='fri-2'></td>
+    </tr>
+    <tr>
+      <th>三限</th>
+      <td class='mon-3'></td>
+      <td class='tue-3'></td>
+      <td class='wed-3'></td>
+      <td class='thu-3'></td>
+      <td class='fri-3'></td>
+    </tr>
+    <tr>
+      <th>四限</th>
+      <td class='mon-4'></td>
+      <td class='tue-4'></td>
+      <td class='wed-4'></td>
+      <td class='thu-4'></td>
+      <td class='fri-4'></td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="entry2.html" class="button button-big btn-sizing button-fill color-yellow btn-middle">完了</a>
+
+</body>
+</html>
